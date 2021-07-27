@@ -1,0 +1,63 @@
+body{
+margin: 0;
+padding: 0;
+}
+span{
+    font-size: 100px;
+}
+.contenedor{
+    background-image: linear-gradient(to left,#000032,#32325A);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cronometro{
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(20px);
+    border: 3px solid rgba(255, 255, 255, 0.5) ;
+    max-width: 50%;
+    height: 30%;
+    border-radius: 5%;
+    /*box-shadow: 11px 17px 22px 0  rgb(255, 255, 255);*/
+}
+.cronometro .display{
+    color: #000032;
+    margin: 6px;
+    text-align: center;
+}
+.botones{
+    display: grid ;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    margin: 30px 15px;
+}
+#save{
+    grid-column: 2/3;
+    margin: 10px 0;
+}
+.botones button{
+    font-size: 20px;
+    background: none;
+    border: 2px solid rgba(0, 0, 50, .7);
+    color: white;
+    cursor: pointer;
+}
+.botones button:hover{
+    border: none;
+    background: white;
+    color:#000032;
+    transition: 1s ease;
+}
+.listado{
+    margin-top: 20px;
+    color: white;
+}
+ul li{
+    color: white;
+    font-size: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
